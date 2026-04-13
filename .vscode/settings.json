@@ -1,0 +1,5 @@
+{
+  "editor.codeLens": true,
+  "java.test.editor.enableShortcuts": true,
+  "java.configuration.updateBuildConfiguration": "automatic"
+}
