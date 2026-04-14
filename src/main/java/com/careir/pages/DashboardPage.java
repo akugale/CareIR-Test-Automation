@@ -17,7 +17,7 @@ public class DashboardPage extends BasePage {
     @FindBy(id = "userMenu")
     private WebElement userMenu;
 
-    @FindBy(xpath = "//*[contains(normalize-space(.),'Messages/Pending Tasks')]")
+    @FindBy(xpath = "//div[text()=" Messages/Pending Tasks "]")
     private WebElement messagesPendingTasksSection;
 
     @FindBy(xpath = "//*[contains(normalize-space(.),'Pending Tasks')]")
