@@ -1,56 +1,46 @@
 package com.careir.pages;
 
 import com.careir.utils.ConfigReader;
+import java.time.Duration;
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
-import java.time.Duration;
-import java.util.List;
 
+/**
+ * Login screen. Uses Page Factory {@link FindBy} locators and fluent actions that return page objects.
+ */
 public class LoginPage extends BasePage {
 
-    @FindBys({
-            @FindBy(id = "username")
-    })
+    /* --- Username (first visible match wins) --- */
+    @FindBy(id = "username")
     private List<WebElement> usernameById;
 
-    @FindBys({
-            @FindBy(name = "username")
-    })
+    @FindBy(name = "username")
     private List<WebElement> usernameByName;
 
-    @FindBys({
-            @FindBy(name = "email")
-    })
+    @FindBy(name = "email")
     private List<WebElement> usernameByEmailName;
 
-    @FindBys({
-            @FindBy(css = "input[type='email']")
-    })
+    @FindBy(css = "input[type='email']")
     private List<WebElement> usernameByEmailType;
 
-    @FindBys({
-            @FindBy(id = "password")
-    })
+    /* --- Password --- */
+    @FindBy(id = "password")
     private List<WebElement> passwordById;
 
-    @FindBys({
-            @FindBy(name = "password")
-    })
+    @FindBy(name = "password")
     private List<WebElement> passwordByName;
 
-    @FindBys({
-            @FindBy(css = "input[type='password']")
-    })
+    @FindBy(css = "input[type='password']")
     private List<WebElement> passwordByType;
 
-    @FindBys({
-            @FindBy(css = "button[type='submit']")
-    })
+    /* --- Submit --- */
+    @FindBy(css = "button[type='submit']")
     private List<WebElement> submitButtons;
 
     public LoginPage(WebDriver driver) {
@@ -61,31 +51,6 @@ public class LoginPage extends BasePage {
         driver.get(ConfigReader.get("baseUrl"));
         bypassPrivacyInterstitialIfPresent();
         return this;
-    }
-
-    private void bypassPrivacyInterstitialIfPresent() {
-        if (isLoginFormVisible()) {
-            return;
-        }
-
-        String title = driver.getTitle() == null ? "" : driver.getTitle().toLowerCase();
-        String pageSource = driver.getPageSource() == null ? "" : driver.getPageSource().toLowerCase();
-        boolean privacyErrorPage = title.contains("privacy error")
-                || pageSource.contains("your connection is not private")
-                || driver.getCurrentUrl().startsWith("chrome-error://");
-
-        if (privacyErrorPage) {
-            new Actions(driver).sendKeys("thisisunsafe").perform();
-            waitForAnyVisible(getUsernameCandidates());
-        }
-    }
-
-    private boolean isLoginFormVisible() {
-        try {
-            return findFirstVisible(getUsernameCandidates()) != null;
-        } catch (NoSuchElementException ignored) {
-            return false;
-        }
     }
 
     public LoginPage enterUsername(String username) {
@@ -112,9 +77,32 @@ public class LoginPage extends BasePage {
     }
 
     public DashboardPage loginAs(String username, String password) {
-        return enterUsername(username)
-                .enterPassword(password)
-                .clickLogin();
+        return enterUsername(username).enterPassword(password).clickLogin();
+    }
+
+    private void bypassPrivacyInterstitialIfPresent() {
+        if (isLoginFormVisible()) {
+            return;
+        }
+
+        String title = driver.getTitle() == null ? "" : driver.getTitle().toLowerCase();
+        String pageSource = driver.getPageSource() == null ? "" : driver.getPageSource().toLowerCase();
+        boolean privacyErrorPage = title.contains("privacy error")
+                || pageSource.contains("your connection is not private")
+                || driver.getCurrentUrl().startsWith("chrome-error://");
+
+        if (privacyErrorPage) {
+            new Actions(driver).sendKeys("thisisunsafe").perform();
+            waitForAnyVisible(getUsernameCandidates());
+        }
+    }
+
+    private boolean isLoginFormVisible() {
+        try {
+            return findFirstVisible(getUsernameCandidates()) != null;
+        } catch (NoSuchElementException ignored) {
+            return false;
+        }
     }
 
     private WebElement findPasswordInput() {
@@ -163,7 +151,7 @@ public class LoginPage extends BasePage {
         throw new org.openqa.selenium.TimeoutException("Could not find visible login element");
     }
 
-    private WebElement findFirstVisible(List<WebElement> elements) {
+    private static WebElement findFirstVisible(List<WebElement> elements) {
         for (WebElement element : elements) {
             if (element.isDisplayed()) {
                 return element;
@@ -173,15 +161,25 @@ public class LoginPage extends BasePage {
     }
 
     private List<WebElement> getUsernameCandidates() {
-        if (findFirstVisible(usernameById) != null) return usernameById;
-        if (findFirstVisible(usernameByName) != null) return usernameByName;
-        if (findFirstVisible(usernameByEmailName) != null) return usernameByEmailName;
+        if (findFirstVisible(usernameById) != null) {
+            return usernameById;
+        }
+        if (findFirstVisible(usernameByName) != null) {
+            return usernameByName;
+        }
+        if (findFirstVisible(usernameByEmailName) != null) {
+            return usernameByEmailName;
+        }
         return usernameByEmailType;
     }
 
     private List<WebElement> getPasswordCandidates() {
-        if (findFirstVisible(passwordById) != null) return passwordById;
-        if (findFirstVisible(passwordByName) != null) return passwordByName;
+        if (findFirstVisible(passwordById) != null) {
+            return passwordById;
+        }
+        if (findFirstVisible(passwordByName) != null) {
+            return passwordByName;
+        }
         return passwordByType;
     }
 
