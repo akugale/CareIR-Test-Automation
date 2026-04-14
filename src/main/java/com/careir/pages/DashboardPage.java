@@ -11,13 +11,13 @@ import org.openqa.selenium.support.FindBy;
  */
 public class DashboardPage extends BasePage {
 
-    @FindBy(css = "h1.dashboard-title")
+    @FindBy(xpath = "//div[@class='msg-title']")
     private WebElement dashboardTitle;
 
     @FindBy(id = "userMenu")
     private WebElement userMenu;
 
-    @FindBy(xpath = "//div[text()=" Messages/Pending Tasks "]")
+    @FindBy(xpath = "//*[contains(normalize-space(.),'Messages/Pending Tasks')]")
     private WebElement messagesPendingTasksSection;
 
     @FindBy(xpath = "//*[contains(normalize-space(.),'Pending Tasks')]")
