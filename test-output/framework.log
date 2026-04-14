@@ -52,3 +52,5 @@
 2026-04-13 18:59:05 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
 2026-04-14 10:28:53 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
 2026-04-14 10:29:01 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 11:10:31 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 11:10:37 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
