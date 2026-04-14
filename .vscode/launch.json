@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug LoginTest (TestNG Class)",
+      "request": "launch",
+      "mainClass": "org.testng.TestNG",
+      "projectName": "careir-test-automation",
+      "args": "testng.xml"
+    },
+    {
+      "type": "java",
+      "name": "Debug Vendor Login Test Method",
+      "request": "launch",
+      "mainClass": "org.testng.TestNG",
+      "projectName": "careir-test-automation",
+      "args": "-testclass com.careir.tests.LoginTest -methods com.careir.tests.LoginTest.verifyVendorUserCanLoginFromProperties"
+    }
+  ]
+}

@@ -3,3 +3,8 @@ target/
 
 # Test reports, screenshots, logs (regenerated each run)
 test-output/
+
+# IDE (optional — uncomment if you do not want these in Git)
+# .idea/
+# *.iml
+# .metadata/
