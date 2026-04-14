@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-13T18:58:56 IST" name="CareIR Automation Suite" finished-at="2026-04-13T18:59:05 IST" duration-ms="8206">
+  <suite started-at="2026-04-14T10:28:44 IST" name="CareIR Automation Suite" finished-at="2026-04-14T10:29:01 IST" duration-ms="16525">
     <groups>
     </groups>
-    <test started-at="2026-04-13T18:58:56 IST" name="Authentication Tests" finished-at="2026-04-13T18:59:05 IST" duration-ms="8206">
+    <test started-at="2026-04-14T10:28:44 IST" name="Authentication Tests" finished-at="2026-04-14T10:29:01 IST" duration-ms="16525">
       <class name="com.careir.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.careir.tests.LoginTest@1fdfafd2]" started-at="2026-04-13T18:58:56 IST" name="setUp" finished-at="2026-04-13T18:59:01 IST" duration-ms="4897" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.careir.tests.LoginTest@1fdfafd2]" started-at="2026-04-14T10:28:44 IST" name="setUp" finished-at="2026-04-14T10:28:53 IST" duration-ms="8726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyVendorUserCanLoginFromProperties()[pri:0, instance:com.careir.tests.LoginTest@1fdfafd2]" started-at="2026-04-13T18:59:01 IST" name="verifyVendorUserCanLoginFromProperties" finished-at="2026-04-13T18:59:04 IST" duration-ms="2618" status="PASS">
+        <test-method signature="verifyVendorUserCanLoginFromProperties()[pri:0, instance:com.careir.tests.LoginTest@1fdfafd2]" started-at="2026-04-14T10:28:53 IST" name="verifyVendorUserCanLoginFromProperties" finished-at="2026-04-14T10:28:57 IST" duration-ms="4265" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Dashboard should be visible for vendor user login expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Dashboard should be visible for vendor user login expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.careir.tests.LoginTest.verifyVendorUserCanLoginFromProperties(LoginTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyVendorUserCanLoginFromProperties -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.careir.tests.LoginTest@1fdfafd2]" started-at="2026-04-13T18:59:04 IST" name="tearDown" finished-at="2026-04-13T18:59:05 IST" duration-ms="611" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.careir.tests.LoginTest@1fdfafd2]" started-at="2026-04-14T10:28:58 IST" name="tearDown" finished-at="2026-04-14T10:29:01 IST" duration-ms="3021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

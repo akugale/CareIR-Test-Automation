@@ -1,23 +1,17 @@
 package com.careir.pages;
 
 import com.careir.utils.ConfigReader;
-import com.careir.utils.WaitUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
-import org.openqa.selenium.support.PageFactory;
-
 import java.time.Duration;
 import java.util.List;
 
-public class LoginPage {
-    private final WebDriver driver;
-    private final WaitUtil waitUtil;
+public class LoginPage extends BasePage {
 
     @FindBys({
             @FindBy(id = "username")
@@ -60,9 +54,7 @@ public class LoginPage {
     private List<WebElement> submitButtons;
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
-        this.waitUtil = new WaitUtil(driver, ConfigReader.getInt("timeout"));
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     public LoginPage open() {
