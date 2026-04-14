@@ -1,0 +1,70 @@
+2026-04-13 14:57:41 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 14:57:41 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 14:57:58 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 14:58:00 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 14:58:15 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 14:58:16 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 15:00:38 [main] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 15:00:56 [main] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 15:00:58 [main] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 15:01:16 [main] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 15:01:57 [main] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 15:02:15 [main] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 15:02:17 [main] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 15:02:35 [main] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 15:19:01 [main] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 15:19:20 [main] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 15:52:58 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 15:52:58 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 15:53:15 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 15:53:16 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 15:53:35 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 15:53:35 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 16:21:18 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 16:21:18 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 16:21:37 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 16:21:37 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 16:22:39 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 16:22:39 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 16:22:58 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 16:22:58 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 17:32:54 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 17:32:54 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 17:33:14 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 17:33:15 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 17:45:30 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 17:45:30 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 17:45:49 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 17:45:50 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 17:53:02 [main] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 17:53:20 [main] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 17:55:46 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 17:55:46 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 17:56:05 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 17:56:06 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 18:08:32 [main] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 18:08:36 [main] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 18:55:51 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 18:55:51 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 18:55:56 [TestNG-PoolService-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 18:55:56 [TestNG-test-Authentication Tests-2] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-13 18:59:01 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-13 18:59:05 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 10:28:53 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 10:29:01 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 11:10:31 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 11:10:37 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 11:43:45 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 11:43:48 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 11:44:36 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 11:44:39 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 11:45:39 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 11:45:43 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 11:47:55 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 11:48:00 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 11:50:28 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 11:50:33 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 11:55:18 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 11:55:22 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.
+2026-04-14 12:02:42 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver initialized. Headless: false
+2026-04-14 12:02:45 [TestNG-test-Authentication Tests-1] INFO  com.careir.base.BaseTest - Driver closed.

@@ -1,0 +1,5 @@
+# Maven build output
+target/
+
+# Test reports, screenshots, logs (regenerated each run)
+test-output/
